@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block head_title %}CTF Blog{% endblock %}
+
+{% block desc %}CTF writeups and programming things I find interesting.{% endblock %}
+
+{% block content_title %}Welcome to JonPizza's CTF Blog!{% endblock %}
+
+{% block content %}
+    {% for p in posts %}
+        {% if p.live %}
+            <h2>&gt; <a href="{{ p.url }}">{{ p.title }}</a></h2>
+            <b>{{ p.catagory }}</b>
+            <br>
+            <i>{{ p.desc }}</i>
+        {% endif %}
+    {% endfor %}
+{% endblock %}

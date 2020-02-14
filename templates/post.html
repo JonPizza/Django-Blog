@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head_title %}{{ p.title }} : {{ p.catagory }}{% endblock %}
+
+{% block desc %}{{ p.body|truncatewords:35 }}...{% endblock %}
+
+{% block content_title %}{{ p.title }} : {{ p.catagory }}{% endblock %}
+
+{% block content %}
+    <b>Challenge Description</b>: 
+    <br>
+    <i>{{ p.desc }}</i>
+    <br>
+    <br>
+    {{ p.body|safe }}
+{% endblock %}

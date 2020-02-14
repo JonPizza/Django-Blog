@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block head_title %}{% endblock %} &sdot; JonPizza</title>
+        <meta name="description" content="{% block desc %}{% endblock %}">
+        <link rel="stylesheet" href="/static/main.css">
+        <link rel="stylesheet" href="/static/pygment.css">
+    </head>
+    <body>
+        <div id="top-links">
+            <h1>{% block content_title %}{% endblock %}</h1>
+            Recent CTFs: 
+            {% for ctf in ctfs %}
+                <a href="/ctf/{{ ctf }}/">{{ ctf }}</a>, 
+            {% endfor %}
+        </div>
+        <div class="con">
+            {% block content %}{% endblock %}
+        </div>
+        <hr>
+        <div class="con" style="text-align: center;">
+            <a href="//github.com/JonPizza">GitHub</a> &sdot; <a href="https://www.youtube.com/channel/UCtJBCn9g-2qmggACsKMJnhA">YouTube</a> &sdot; <a href="//twitter.com/DevJonPizza">Twitter</a> &sdot; u/DevJonPizza &sdot; jon@jon.network
+        </div>
+    </body>
+</html>
+
+<!-- flag{east3r_egg} -->

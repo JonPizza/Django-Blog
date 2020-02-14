@@ -1,0 +1,26 @@
+head, body {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    background-color: rgb(226, 226, 226);
+    font-family: Sans-serif;
+}
+
+.con {
+    padding: 3%;
+    display: table; 
+    margin: 0 auto;
+    max-width: 94%;
+    min-width: 60%;
+    width: 650px;
+}
+
+#top-links{
+    padding: 0;
+    display: table; 
+    margin: 0 auto;
+    max-width: 94%;
+    min-width: 70%;
+    width: 750px;
+    text-align: center;
+}
